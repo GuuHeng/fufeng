@@ -4,6 +4,7 @@
 `UIApplication.shared.openURL(_ url: URL)`
 在APP需要使用电话功能时，一般会调用这个方法，然而这个方法存在局限性
 在iOS 10.2以前，`UIApplication.shared.openURL(_ url: URL)`是可以快速调起选择弹窗，不存在延迟
+
 但是在iOS 10.2以后，调用会在延迟数秒后才出现弹窗，这个就很不舒服了，所以在iOS 10.2以后我会启用另一个方法
 ```
 open func open(_ url: URL, options: [String : Any] = [:], completionHandler completion: ((Bool) -> Swift.Void)? = nil)
