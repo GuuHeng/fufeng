@@ -10,7 +10,7 @@
 open func open(_ url: URL, options: [String : Any] = [:], completionHandler completion: ((Bool) -> Swift.Void)? = nil)
 ```
 这个方法在iOS 10.2以后会快速调起弹窗哦~ ~ ~
-我现在开始做笔记了~敬请关注
+我开始做笔记了~
 ```
    func callPhone()
     {
