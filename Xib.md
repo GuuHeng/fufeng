@@ -9,8 +9,8 @@ xib中设置好约束后，分别启动iOS10 和 iOS11模拟器，在iOS11上能
 ## storyboard viewcontroller传值 
 
   使用storyboard进行开发，控制器间连线跳转如果需要传值，需进行如下操作
-  1. 选中两个controller间的连线并设置identifier
   
+  1. 选中两个controller间的连线并设置identifier
   2. 假如A controller向B controller跳转，则在A controller的 .swift中重写函数
   
     func prepare(for segue: UIStoryboardSegue, sender: Any?)
