@@ -16,6 +16,7 @@ xib中设置好约束后，分别启动iOS10 和 iOS11模拟器，在iOS11上能
     
   · 最简单最基本的传值如 Demo1: 
   
+  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goA"
         {
@@ -29,8 +30,9 @@ xib中设置好约束后，分别启动iOS10 和 iOS11模拟器，在iOS11上能
         }
     }
     
+    
   · 控制器中 tableview 点击 cell 如何进行跳转传值
-在纯代码创建的控制器中通过
+    在纯代码创建的控制器中通过
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) 
     
@@ -39,13 +41,15 @@ xib中设置好约束后，分别启动iOS10 和 iOS11模拟器，在iOS11上能
 tableview 的点击事件调用的方法传递分为三步
    1、 先是
    
-     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath)
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath)
+     
    2、之后是调用这个方法，并进行跳转了，所以进行 data获取需要在前一步（即是第1步）中进行，并在当前方法进行赋值传递
    
-     func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    func prepare(for segue: UIStoryboardSegue, sender: Any?)
+     
    3、 最后才是下面这个方法，因为已经在第2步跳转了，所以在下面这个方法进行获取data并赋值传递是行不通的
    
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 
 
 
