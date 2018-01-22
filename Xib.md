@@ -61,7 +61,7 @@ tableview 的点击事件调用的方法传递分为三步
   
   Demo:
   
-    var isTrue: Bool = false
+    var isTrue: Bool = false
     var dataSource: Array<String> = ["q", "w", "e", "r"]
     var selectedString: String = "random"
     
