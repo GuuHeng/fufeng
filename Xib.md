@@ -59,4 +59,39 @@ tableview 的点击事件调用的方法传递分为三步
         
   该方法进行条件判断，满足条件return true，不满足条件return false
   
+  Demo:
+  
+    var isTrue: Bool = false
+    var dataSource: Array<String> = ["q", "w", "e", "r"]
+    var selectedString: String = "random"
+    
+    // 该方法中获取需要传递的值
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if indexPath.row < (dataSource.count)! {
+            let rowString = dataSource[indexPath.row]
+            selectedString = rowString
+            if rowString = "e" {
+               isTrue = true
+            }
+        }
+        return indexPath
+    }
+   
+    // 该方法进行判断是否满足条件并跳转
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "A" {
+            if isTrue == true {
+                return true
+            }
+        }
+        return false
+    }
+    
+    // 该方法进行传值
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "A" {
+            let vc: BViewController = segue.destination as! BViewController
+            vc.title = selectedString
+        }
+    }
 
