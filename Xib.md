@@ -12,11 +12,11 @@ xib中设置好约束后，分别启动iOS10 和 iOS11模拟器，在iOS11上能
   1. 选中两个controller间的连线并设置identifier
   2. 假如A controller向B controller跳转，则在A controller的 .swift中重写函数
   
-    func prepare(for segue: UIStoryboardSegue, sender: Any?)
+      func prepare(for segue: UIStoryboardSegue, sender: Any?)
     
   Demo1:
   
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goA"
         {
             let AVC: AViewController = segue.destination as! AViewController
