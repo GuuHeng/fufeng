@@ -60,8 +60,7 @@ tableview 的点击事件调用的方法传递分为三步
   该方法进行条件判断，满足条件return true，不满足条件return false
   
   Demo:
-  ```
-    var isTrue: Bool = false
+```var isTrue: Bool = false
     var dataSource: Array<String> = ["q", "w", "e", "r"]
     var selectedString: String = "random"
     
@@ -93,5 +92,5 @@ tableview 的点击事件调用的方法传递分为三步
             let vc: BViewController = segue.destination as! BViewController
             vc.title = selectedString
         }
-    }
-```
+    }```
+
