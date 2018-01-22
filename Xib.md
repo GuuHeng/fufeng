@@ -17,14 +17,14 @@ xib中设置好约束后，分别启动iOS10 和 iOS11模拟器，在iOS11上能
   Demo1:
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-          if segue.identifier == "goA"
-         {
-             let AVC: AViewController = segue.destination as! AViewController
-             A.flag = "1"
-         }
-         else if segue.identifier == "goB"
-         {
-             let B: BViewController = segue.destination as! BViewController
-             B.flag = "1"
-         }
-     }
+           if segue.identifier == "goA"
+          {
+              let AVC: AViewController = segue.destination as! AViewController
+              A.flag = "1"
+          }
+          else if segue.identifier == "goB"
+          {
+              let B: BViewController = segue.destination as! BViewController
+              B.flag = "1"
+          }
+      }
