@@ -51,5 +51,11 @@ tableview 的点击事件调用的方法传递分为三步
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 
+· 需要进行条件判断是否跳转，该如何操作呢
+  调用
 
+    func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool 
+        
+  该方法进行条件判断，满足条件return true，不满足条件return false
+  
 
