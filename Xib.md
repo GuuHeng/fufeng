@@ -94,3 +94,16 @@ tableview 的点击事件调用的方法传递分为三步
         }
     }
 
+
+## collectionview 中获取传值使用什么呢？
+
+```func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        if indexPath.section < (self.askRes?.data?.count)! {
+            var askData: AskDataRes = (self.askRes?.data![indexPath.section])!
+            let child: AskChannelModel = askData.child![indexPath.row]
+            self.selectedModel = child
+            //            self.performSegue(withIdentifier: "askDetail", sender: self)
+            return true
+        }
+        return false
+    }
