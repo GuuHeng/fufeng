@@ -93,7 +93,7 @@ tableview 的点击事件调用的方法传递分为三步
             vc.title = selectedString
         }
     }
-
+```
 
 ## collectionview 中获取传值使用什么呢？
 
@@ -106,4 +106,5 @@ tableview 的点击事件调用的方法传递分为三步
             return true
         }
         return false
-    }
+    }
+```
