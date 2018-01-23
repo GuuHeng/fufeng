@@ -92,5 +92,5 @@ tableview 的点击事件调用的方法传递分为三步
             let vc: BViewController = segue.destination as! BViewController
             vc.title = selectedString
         }
-    }```
+    }
 
