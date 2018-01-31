@@ -3,6 +3,8 @@
   所以在进行text文本显示前，需要进行精度处理，通过NSNumberFormatter进行处理
     ```  
         NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        
         formatter.numberStyle = NSNumberFormatterDecimalStyle;
+        
         NSString *number = [formatter stringFromNumber:num];
     ```
