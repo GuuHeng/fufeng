@@ -6,7 +6,7 @@ xib中设置好约束后，分别启动iOS10 和 iOS11模拟器，在iOS11上能
 
 
 
-## storyboard viewcontroller传值 
+## storyboard viewController传值 
 
   使用storyboard进行开发，控制器间连线跳转如果需要传值，需进行如下操作
   
