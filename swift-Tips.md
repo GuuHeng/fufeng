@@ -3,7 +3,7 @@
 
      addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
     
-    例：
+ 例：
     
     let imageString = "https://www.baidu.com/.../斯威夫特.png"
     cell.imageView.kf.setImage(with: URL.init(string: imageString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!))
