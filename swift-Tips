@@ -1,8 +1,8 @@
 # 后台获取的图片字符串存在中文，使用kingfisher无法直接加载
 解决方法： 
-    ```
-    addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-    ```
+     ```
+     addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+     ```
     
     例：
     ```
