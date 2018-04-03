@@ -13,4 +13,5 @@
     fatal: index-pack failed
     
 处理方法-终端输入命令行：git config --global http.postBuffer 524288000
+
 查看修改后配置-命令行：git config --list
