@@ -107,7 +107,11 @@ terminal commond:
     
 ### 第十一步：更新维护
 1、代码修改更新后，需要修改.podspec中的版本号version
+
+
 2、打标签，推送远程
+
+
 3、
 ```
    pod trunk push PodDemo.podspec
