@@ -22,7 +22,8 @@ terminal commond:
   
 ### 第二步：确认之后
  
- ```pod trunk me
+ ```
+    pod trunk me
  ```
     
 ### 第三步：
@@ -101,7 +102,6 @@ terminal commond:
     
     pod setup
     ...
-    '''
     
 ### 第十一步：更新维护
 1、代码修改更新后，需要修改.podspec中的版本号version
