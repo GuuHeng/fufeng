@@ -4,6 +4,7 @@
 ###整理
 
 terminal commond:
+
   
   第一步：
          
@@ -53,6 +54,7 @@ terminal commond:
      s.social_media_url   = "https://github.com/GuuHeng" # 个人主页
 
     end
+    ```
     
    第七步：修改完 .podspec后，验证其正确性，终端键入
      
