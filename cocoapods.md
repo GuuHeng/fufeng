@@ -81,7 +81,7 @@
 ```
     
 如果成功了，会出现以下字样
-
+```
     Updating spec repo `master`
     Validating podspec
      -> PodDemo (0.0.1)
@@ -95,7 +95,7 @@
      📅  March 7th, 01:39
      🌎  https://cocoapods.org/pods/BYPhoneNumTF
      👍  Tell your friends!
-
+```
    
 ### 第十步：使用
     
