@@ -76,10 +76,12 @@
     git push origin --tags
     
 ### 第九步：发布
-    
+```
     pod trunk push PodDemo.podspec
+```
     
-    如果成功了，会出现以下字样
+如果成功了，会出现以下字样
+
     Updating spec repo `master`
     Validating podspec
      -> PodDemo (0.0.1)
