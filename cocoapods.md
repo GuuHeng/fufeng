@@ -89,12 +89,12 @@
     Updating spec repo `master`
 
      --------------------------------------------------------------------------------
-     🎉  Congrats
+    🎉  Congrats
 
-     🚀  BYPhoneNumTF (1.0.0) successfully published
-     📅  March 7th, 01:39
-     🌎  https://cocoapods.org/pods/BYPhoneNumTF
-     👍  Tell your friends!
+    🚀  BYPhoneNumTF (1.0.0) successfully published
+    📅  March 7th, 01:39
+    🌎  https://cocoapods.org/pods/BYPhoneNumTF
+    👍  Tell your friends!
 ```
    
 ### 第十步：使用
