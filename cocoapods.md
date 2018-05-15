@@ -1,9 +1,6 @@
-[cocoapods制作分享自己的公有库](https://www.jianshu.com/p/d2d98298b1b8)
+# cocoapods制作公有库整理
 
-
-##整理
-
-terminal commond:
+下文代码都为 terminal commond:
 
 ### 第一步：
          
