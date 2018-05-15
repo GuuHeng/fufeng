@@ -18,8 +18,7 @@ terminal commond:
     
   设置完后，邮箱会收到邮件，登录邮箱确认即可
   
-### 第二步：
-确认之后
+### 第二步：确认之后
  
     pod trunk me
     
@@ -58,7 +57,7 @@ terminal commond:
     end
 ```
     
-###第七步：
+### 第七步：
 修改完 .podspec后，验证其正确性，终端键入
      
      pod lib lint
@@ -75,8 +74,7 @@ terminal commond:
     git tag -a 0.0.1 -m '打tag，这里是标签说明'
     git push origin --tags
     
-### 第九步：
-发布
+### 第九步：发布
     
     pod trunk push PodDemo.podspec
     
@@ -103,8 +101,7 @@ terminal commond:
     ...
     '''
     
-### 第十一步：
-更新维护
+### 第十一步：更新维护
 1、代码修改更新后，需要修改.podspec中的版本号version
 2、打标签，推送远程
 3、pod trunk push PodDemo.podspec
