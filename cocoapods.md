@@ -18,15 +18,19 @@ terminal commond:
     
   设置完后，邮箱会收到邮件，登录邮箱确认即可
   
-### 第二步：确认之后
+### 第二步：
+确认之后
  
     pod trunk me
     
-### 第三步：在github上创建一个空仓库，例如PodDemo,确保包含LICENSE，README.md文件，然后将PodDemo clone到本地
+### 第三步：
+在github上创建一个空仓库，例如PodDemo,确保包含LICENSE，README.md文件，然后将PodDemo clone到本地
   
-### 第四步：在本地PodDemo文件夹中，创建工程项目代码，然后git同步到github仓库
+### 第四步：
+在本地PodDemo文件夹中，创建工程项目代码，然后git同步到github仓库
   
-### 第五步：创建.podspec，例创建PodDemo.podspec，（.podspec是用ruby的配置文件，描述项目信息）
+### 第五步：
+创建.podspec，例创建PodDemo.podspec，（.podspec是用ruby的配置文件，描述项目信息）
      
      pod spec create PodDemo
      
@@ -51,9 +55,11 @@ terminal commond:
      s.author             = { "HuHeng" => "huheng080309@163.com" } # 作者信息
      s.social_media_url   = "https://github.com/GuuHeng" # 个人主页
 
-    end```
+    end
+```
     
-### 第七步：修改完 .podspec后，验证其正确性，终端键入
+###第七步：
+修改完 .podspec后，验证其正确性，终端键入
      
      pod lib lint
      
@@ -63,12 +69,14 @@ terminal commond:
     -> PodDemo (0.0.1)
     PodDemo passed validation
     
-### 第八步：给仓库打标签，1.创建表情，2.推送到远程
+### 第八步：
+给仓库打标签，1.创建表情，2.推送到远程
   
     git tag -a 0.0.1 -m '打tag，这里是标签说明'
     git push origin --tags
     
-### 第九步：发布
+### 第九步：
+发布
     
     pod trunk push PodDemo.podspec
     
@@ -88,13 +96,15 @@ terminal commond:
      👍  Tell your friends!
 
    
-### 第十步：使用
+### 第十步：
+使用
     
     pod setup
     ...
     '''
     
-### 第十一步：更新维护
+### 第十一步：
+更新维护
 1、代码修改更新后，需要修改.podspec中的版本号version
 2、打标签，推送远程
 3、pod trunk push PodDemo.podspec
