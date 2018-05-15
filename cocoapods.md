@@ -5,17 +5,23 @@
 
 terminal commond:
   
-  第一步：注册cocoapods账号，
+  第一步：
+         
+         注册cocoapods账号，
+         
          a.修改your_email为自己的github账号邮箱
+         
          b.修改your_name为想设置的名字
       
     pod trunk register your_email 'your_name' --verbose
+    
     
   设置完后，邮箱会收到邮件，登录邮箱确认即可
     
   第二步：确认之后
  
     pod trunk me
+    
  
   第三步：在github上创建一个空仓库，例如PodDemo,确保包含LICENSE，README.md文件，然后将PodDemo clone到本地
   
@@ -24,6 +30,7 @@ terminal commond:
   第五步：创建.podspec，例创建PodDemo.podspec，（.podspec是用ruby的配置文件，描述项目信息）
      
      pod spec create PodDemo
+     
      
   第六步：在.podspec文件中进行项目配置修改
     
