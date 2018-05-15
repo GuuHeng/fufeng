@@ -1,12 +1,11 @@
 [cocoapods制作分享自己的公有库](https://www.jianshu.com/p/d2d98298b1b8)
 
 
-###整理
+##整理
 
 terminal commond:
 
-  
-  第一步：
+  ### 第一步：
          
     注册cocoapods账号，
          
@@ -19,7 +18,7 @@ terminal commond:
     
   设置完后，邮箱会收到邮件，登录邮箱确认即可
     
-  第二步：确认之后
+ ### 第二步：确认之后
  
     pod trunk me
     
@@ -33,7 +32,7 @@ terminal commond:
      pod spec create PodDemo
      
      
-  第六步：在.podspec文件中进行项目配置修改
+ ###第六步：在.podspec文件中进行项目配置修改
     
  ``` Pod::Spec.new do |s|
      s.name         = "PodDemo" # 项目名称
