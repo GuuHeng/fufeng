@@ -53,10 +53,9 @@ terminal commond:
      s.author             = { "HuHeng" => "huheng080309@163.com" } # 作者信息
      s.social_media_url   = "https://github.com/GuuHeng" # 个人主页
 
-    end
-    ```
+    end```
     
-   第七步：修改完 .podspec后，验证其正确性，终端键入
+    第七步：修改完 .podspec后，验证其正确性，终端键入
      
      pod lib lint
      
