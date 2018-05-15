@@ -7,11 +7,11 @@ terminal commond:
   
   第一步：
          
-         注册cocoapods账号，
+    注册cocoapods账号，
          
-         a.修改your_email为自己的github账号邮箱
+    a.修改your_email为自己的github账号邮箱
          
-         b.修改your_name为想设置的名字
+    b.修改your_name为想设置的名字
       
     pod trunk register your_email 'your_name' --verbose
     
@@ -34,7 +34,7 @@ terminal commond:
      
   第六步：在.podspec文件中进行项目配置修改
     
-    Pod::Spec.new do |s|
+ ``` Pod::Spec.new do |s|
      s.name         = "PodDemo" # 项目名称
      s.version      = "0.0.1"  # 版本号 与 你仓库的 标签号tag 对应
      s.license      = { :type => "MIT", :file => "LICENSE" }          # 开源证书
@@ -57,6 +57,7 @@ terminal commond:
    第七步：修改完 .podspec后，验证其正确性，终端键入
      
      pod lib lint
+     
    
    验证成功会出现
     
