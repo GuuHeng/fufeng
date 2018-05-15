@@ -22,7 +22,8 @@ terminal commond:
   
 ### 第二步：确认之后
  
-    pod trunk me
+ ```pod trunk me
+ ```
     
 ### 第三步：
 在github上创建一个空仓库，例如PodDemo,确保包含LICENSE，README.md文件，然后将PodDemo clone到本地
@@ -96,8 +97,7 @@ terminal commond:
      👍  Tell your friends!
 
    
-### 第十步：
-使用
+### 第十步：使用
     
     pod setup
     ...
