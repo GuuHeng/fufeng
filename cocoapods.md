@@ -13,7 +13,9 @@ terminal commond:
          
     b.修改your_name为想设置的名字
       
+```
     pod trunk register your_email 'your_name' --verbose
+```
     
     
   设置完后，邮箱会收到邮件，登录邮箱确认即可
