@@ -100,8 +100,10 @@ terminal commond:
    
 ### 第十步：使用
     
-    pod setup
-    ...
+```
+    pod setup
+    ...
+```
     
 ### 第十一步：更新维护
 1、代码修改更新后，需要修改.podspec中的版本号version
