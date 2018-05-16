@@ -67,16 +67,16 @@
      
    
    验证成功会出现
-    
+```    
     -> PodDemo (0.0.1)
     PodDemo passed validation
-    
+``` 
 ### 第八步：
 给仓库打标签，1.创建表情，2.推送到远程
-  
-    git tag -a 0.0.1 -m '打tag，这里是标签说明'
+```
+    git tag -a 0.0.1 -m '打tag，这里是标签说明'
     git push origin --tags
-    
+```
 ### 第九步：发布
 ```
     pod trunk push PodDemo.podspec
@@ -100,7 +100,6 @@
 ```
    
 ### 第十步：使用
-    
 ```
     pod setup
     ...
