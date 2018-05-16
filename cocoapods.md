@@ -61,7 +61,9 @@
 ### 第七步：
 修改完 .podspec后，验证其正确性，终端键入
      
-     pod lib lint
+```
+    pod lib lint
+```
      
    
    验证成功会出现
