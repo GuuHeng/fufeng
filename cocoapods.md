@@ -117,3 +117,7 @@
    pod trunk push PodDemo.podspec
 ```
 
+### 如果pod search 不到库，则可以先执行
+```
+   rm ~/Library/Caches/CocoaPods/search_index.json
+```
