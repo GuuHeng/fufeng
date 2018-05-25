@@ -14,8 +14,8 @@
  
  · [cocoapods公有库](https://github.com/GuuHeng/fufeng/blob/master/cocoapods.md)
  
- · [基于AFNetworking的再次封装](https://github.com/GuuHeng/HHHttpRequestProject)
+ · [pods库-基于AFNetworking的再次封装](https://github.com/GuuHeng/HHHttpRequestProject)
  
- · [导航返回-截图缩放式](https://github.com/GuuHeng/HHPopAnimation)
+ · [pods库-导航返回-截图缩放式](https://github.com/GuuHeng/HHPopAnimation)
  
- · [轮播图](https://github.com/GuuHeng/SliderView)
+ · [pods库-轮播图](https://github.com/GuuHeng/SliderView)
