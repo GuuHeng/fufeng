@@ -19,3 +19,5 @@
  · [pods库-导航返回-截图缩放式](https://github.com/GuuHeng/HHPopAnimation)
  
  · [pods库-轮播图](https://github.com/GuuHeng/SliderView)
+
+ · [git--sourcetree问题](https://github.com/GuuHeng/fufeng/blob/master/git.md)
