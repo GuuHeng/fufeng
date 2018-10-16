@@ -51,3 +51,29 @@
 ## 我在开始多工程工作时，正常操作后，在Demo中没有问题，在项目里却出现问题“file not found”，在处理该问题时，发现应该是在项目里的子工程中加了个文件夹，由于多了一层文件路径，主工程在原有路径下查找不到文件。。。
 主工程依赖子工程A时，如果引用A中文件出现“file not founded”，则可能头文件路径添加不完全的缘故。
 如果A中存在文件夹，主工程中添加子工程A的文件路径时，如果只添加了最外层的文件夹路径，需要调整Header Search Paths的non-recursive为recursive，这样在主工程中引用A中文件时，会递归到A中的这个文件，bingo!
+
+
+# UIAlertController 文字居中
+```
+// view: UIAlertController的视图
+// message: 文本内容
+// msgAlignment: 文本对齐方式
++ (void)enumrateSubviewsInView:(UIView *)view message:(NSString*)message msgAlignment:(NSTextAlignment)msgAlignment {
+    NSArray *subViews = view.subviews;
+    if (subViews.count == 0) {
+        return;
+    }
+    for (NSInteger i = 0; i < subViews.count; i++) {
+        UIView *subView = subViews[i];
+        [self enumrateSubviewsInView:subView message:message msgAlignment:msgAlignment];
+        
+        if ([subView isKindOfClass:[UILabel class]]) {
+            UILabel *label = (UILabel *)subView;
+            if ([label.text isEqualToString:message]) {
+                label.textAlignment = msgAlignment;
+            }
+        }
+    }
+}
+```
+             
