@@ -78,8 +78,10 @@
 ```
              
 # unicode和中文互转
+```
 //unicode转中文
 NSString* strA = [@"%E4%B8%AD%E5%9B%BD"stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
 //中文转unicode
 NSString *strB = [@"中国"stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
@@ -93,3 +95,4 @@ urlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacter
 
 //unicode转中文
 urlStr = [urlStr stringByRemovingPercentEncoding];
+```
