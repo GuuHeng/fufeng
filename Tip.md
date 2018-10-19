@@ -77,3 +77,19 @@
 }
 ```
              
+# unicode和中文互转
+//unicode转中文
+NSString* strA = [@"%E4%B8%AD%E5%9B%BD"stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//中文转unicode
+NSString *strB = [@"中国"stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
+
+ios9之后
+
+NSString *urlStr = @"url地址";
+
+//中文转unicode
+urlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+
+//unicode转中文
+urlStr = [urlStr stringByRemovingPercentEncoding];
