@@ -13,3 +13,13 @@
 
         _contentLabel.fadeOnAsynchronouslyDisplay = NO;
         _contentLabel.fadeOnHighlight = NO;
+
+# tableview 更新数据到第二页时，不手动下拉刷新，而点击事件中调用beginRefresh刷新，tableview会回不到顶部问题
+     应该是beginRefresh时，tableview回到顶部，存在估算高度造成整体height不准，回到顶部不准。
+     1、一定要关闭估算 estimatedRowHeight；self.tableView.estimatedRowHeight = 0.0;
+     2、不使用系统自动约束UITableViewAutomaticDimension
+     3、要自己计算cellheight
+     
+     
+     
+     
