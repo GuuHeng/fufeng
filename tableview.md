@@ -9,3 +9,7 @@
 3. 对于一些不复杂的cell，我目前会将约束统一写进updateConstraints中，因为这是系统提供的更新约束的方法，然后在cell创建的最后调用updateFocusIfNeeded进行
   约束的添加
 
+# YYLabel 刷新闪烁问题处理
+
+        _contentLabel.fadeOnAsynchronouslyDisplay = NO;
+        _contentLabel.fadeOnHighlight = NO;
