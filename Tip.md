@@ -96,3 +96,21 @@ urlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacter
 //unicode转中文
 urlStr = [urlStr stringByRemovingPercentEncoding];
 ```
+
+
+# 上传AppStore问题 .../Demo.framework contains unsupported architectures '[x86_64,i386]'
+  为了方便开发者使用，有的SDK将 i386 x86_64 armv7 arm64几个平台合并到一起，所以上传AppStore时需要移除i386 x86_64平台，方可提交
+  
+  在SDK路径下执行命令删除i386 x86_64平台：
+    
+      lib Demo.framework/Demo -thin armv7 -output Demo_armv7
+      lib Demo.framework/Demo -thin arm64 -output Demo_arm64
+      lib -create Demo_armv7 Demo_arm64 -output Demo
+      mv Demo Demo.framework/
+  
+  
+
+
+
+
+
