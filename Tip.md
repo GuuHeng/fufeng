@@ -103,9 +103,9 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
   
   在SDK路径下执行命令删除i386 x86_64平台：
     
-      lib Demo.framework/Demo -thin armv7 -output Demo_armv7
-      lib Demo.framework/Demo -thin arm64 -output Demo_arm64
-      lib -create Demo_armv7 Demo_arm64 -output Demo
+      lipo Demo.framework/Demo -thin armv7 -output Demo_armv7
+      lipo Demo.framework/Demo -thin arm64 -output Demo_arm64
+      lipo -create Demo_armv7 Demo_arm64 -output Demo
       mv Demo Demo.framework/
   
   
