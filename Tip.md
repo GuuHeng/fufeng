@@ -103,11 +103,14 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
   
   在SDK路径下执行命令删除i386 x86_64平台：
     
-      lipo Demo.framework/Demo -thin armv7 -output Demo_armv7
-      lipo Demo.framework/Demo -thin arm64 -output Demo_arm64
-      lipo -create Demo_armv7 Demo_arm64 -output Demo
-      mv Demo Demo.framework/
-  
+    cd 目标framework
+    # 使用lipo -info 可以查看包含的架构
+    lipo -info AipBase.framework/AipBase  # Architectures in the fat file: Demo are: i386 x86_64 armv7 armv7s arm64
+    # 移除x86_64, i386
+    lipo -remove x86_64 Demo.framework/Demo -o Demo.framework/Demo
+    lipo -remove i386 Demo.framework/Demo -o Demo.framework/Demo
+    # 再次查看
+    lipo -info Demo.framework/Demo # Architectures in the fat file: Demo are: armv7 armv7s arm64
   
 
 
