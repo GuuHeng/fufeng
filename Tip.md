@@ -115,5 +115,9 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
 
 
 
-
+# 字符串containsString:报错
+    在实际需求中，对通讯录群组名称进行匹配搜索，群组名称字符串进行containsString:操作时，群组名称不只NSString，也会存在NSTaggedPointerString的情况，NSTaggedPointerString进行containsString:会直接报错（[NSTaggedPointerString rangeOfString:options:range:locale:]）
+    我们需要将名称进行转换：
+    NSMutableString *mutableString = [NSMutableString stringWithString:groupName];
+    对mutableString进行containsString:操作
 
