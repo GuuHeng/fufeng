@@ -52,3 +52,7 @@
 调用：writeFlutter("Dart"); 
 打印：Dart2020
 ```
+5、
+```
+Widget的color和decoration不能共存
+```
