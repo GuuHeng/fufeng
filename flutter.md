@@ -56,3 +56,5 @@
 ```
 Widget的color和decoration不能共存
 ```
+
+## 谨防Text溢出，UI黄色警告，加限制：maxLines或添在Container中或其他
