@@ -1,5 +1,7 @@
 # flutter 小知识点
 
+## windows安装问题处理 https://blog.csdn.net/weixin_40841731/article/details/109072564
+
 ## 类型转换
 
    String转Number，使用parse：
