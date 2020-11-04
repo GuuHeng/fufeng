@@ -60,3 +60,16 @@ Widget的color和decoration不能共存
 ```
 
 ## 谨防Text溢出，UI黄色警告，加限制：maxLines或添在Container中或其他
+
+## iOS集成flutter
+```
+出现
+[!] Invalid `Podfile` file: cannot load such file -- ../my_flutter/.ios/Flutter/podhelper.rb.
+是路径错误
+
+当flutter项目和iOS项目是如此路径时
+Desktop/iOSProject/my_flutter
+Desktop/iOSProject/xx.xcodeproj
+
+这里应该是这样：flutter_application_path = 'my_flutter/'
+```
