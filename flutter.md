@@ -73,3 +73,9 @@ Desktop/iOSProject/xx.xcodeproj
 
 这里应该是这样：flutter_application_path = 'my_flutter/'
 ```
+
+```
+运行XCode时报出flutter_export_environment.sh: line 8: inherited: command not found，在多次编译运行可能会产生这个问题，
+这时需要到flutter项目中flutter clean下，之后flutter packages get
+
+```
