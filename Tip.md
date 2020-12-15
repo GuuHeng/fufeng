@@ -121,4 +121,10 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
     NSMutableString *mutableString = [NSMutableString stringWithString:groupName];
     对mutableString进行containsString:操作
 
-# 制作子工程静态库，swift不支持static library .a静态库的制作，需要改制作framework
+# 制作子工程静态库，swift不支持static library .a静态库的制作，需要改制作framework；
+```
+  build framework不成功（unable to load standard library for target 'arm64-apple-ios14.2'），可以重启xcode，重新build；
+  
+  framework当做模块，swift类，权限必须public或open，才可在模块外被访问
+  
+```
