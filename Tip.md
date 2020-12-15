@@ -121,3 +121,4 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
     NSMutableString *mutableString = [NSMutableString stringWithString:groupName];
     对mutableString进行containsString:操作
 
+# 制作子工程静态库，swift不支持static library .a静态库的制作，需要改制作framework
