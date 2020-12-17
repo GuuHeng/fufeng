@@ -79,3 +79,5 @@ Desktop/iOSProject/xx.xcodeproj
 这时需要到flutter项目中flutter clean下，之后flutter packages get
 
 ```
+
+## Mac推荐安装Android Studio4.0版本，4.0以上版本在flutter doctor时会报✗ Flutter plugin not installed; this adds Flutter specific functionality.
