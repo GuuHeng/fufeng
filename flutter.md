@@ -81,3 +81,26 @@ Desktop/iOSProject/xx.xcodeproj
 ```
 
 ## Mac推荐安装Android Studio4.0版本，4.0以上版本在flutter doctor时会报✗ Flutter plugin not installed; this adds Flutter specific functionality.
+
+## iOS集成flutter module
+
+```
+flutter_application_path = '../FlutterModule/'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+install_all_flutter_pods(flutter_application_path)
+
+```
+
+
+```
+podfile中使用
+      eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')),binding)
+在执行pod install时，会报
+[!] Invalid `Podfile` file: /Users/huheng/Desktop/projects/sm/Flutter/Generated.xcconfig must exist. If you're running pod install manually, make sure flutter pub get is executed first.
+在百度、google了半天，也清理了下pod，还是解决未果；
+改用  
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+pod install执行成功
+
+```
