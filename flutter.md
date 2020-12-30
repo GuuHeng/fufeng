@@ -81,10 +81,20 @@ Desktop/iOSProject/xx.xcodeproj
 ```
 
 ## Mac安装Android Studio4.1版本，4.0以上版本在flutter doctor时会报✗ Flutter plugin not installed; this adds Flutter specific functionality.
+
+Android Studio (4.1) 的插件位置换成了
 ```
-Android Studio (4.1) 的插件位置换成了~/Library/Application\ Support/Google/AndroidStudio4.1/plugins，而老版本的位置为~/Library/Application\ Support/AndroidStudio4.1，所以用 flutter doctor 这个命令去检测时，还是会去原来的位置查找这两个插件找不到。
+~/Library/Application\ Support/Google/AndroidStudio4.1/plugins，
+```
+而老版本的位置为
+```
+~/Library/Application\ Support/AndroidStudio4.1
+```
+所以用 flutter doctor 这个命令去检测时，还是会去原来的位置查找这两个插件找不到。
 
 解决办法:给新目录添加软连接
+
+```
 ln -s ~/Library/Application\ Support/Google/AndroidStudio4.1/plugins ~/Library/Application\ Support/AndroidStudio4.1
 ```
 
