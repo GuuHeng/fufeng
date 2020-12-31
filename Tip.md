@@ -130,3 +130,13 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
 ```
 
 # 添加域名和ip映射关系 前往文件夹/etc,sudo打开只读文件hosts（ipaddress.com查询）
+
+## gem install bundler:2.1.2 
+```
+报错
+    ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.
+改用 sudo gem install -n /usr/local/bin bundler:2.1.2 
+```
+    
+
