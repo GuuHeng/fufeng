@@ -128,3 +128,5 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
   framework当做模块，swift类，权限必须public或open，才可在模块外被访问
   
 ```
+
+# 添加域名和ip映射关系 前往文件夹/etc,sudo打开只读文件hosts
