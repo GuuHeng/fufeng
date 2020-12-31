@@ -129,4 +129,4 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
   
 ```
 
-# 添加域名和ip映射关系 前往文件夹/etc,sudo打开只读文件hosts
+# 添加域名和ip映射关系 前往文件夹/etc,sudo打开只读文件hosts（ipaddress.com查询）
