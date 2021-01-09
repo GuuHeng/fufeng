@@ -121,3 +121,10 @@
 ```
    rm ~/Library/Caches/CocoaPods/search_index.json
 ```
+
+### pod repo update --verbose报错error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54
+```
+   git config --global http.postBuffer 524288000
+```
+
+
