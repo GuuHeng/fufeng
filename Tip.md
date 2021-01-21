@@ -138,5 +138,15 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
     You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.
 改用 sudo gem install -n /usr/local/bin bundler:2.1.2 
 ```
-    
+
+## Share Extension
+
+```
+- (void)loadItemForTypeIdentifier:(NSString *)typeIdentifier options:(nullable NSDictionary *)options completionHandler:(nullable NSItemProviderCompletionHandler)completionHandler;
+
+completionHandler中要手动GCD回到主线程进行后续操作
+
+
+``
+
 
