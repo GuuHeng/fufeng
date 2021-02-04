@@ -137,5 +137,5 @@ sudo chmod 775 /usr/local
 
 ```
 
-[cocoapods问题](https://www.it610.com/article/1279724089124077568.html)
+[cocoapods问题](https://www.it610.com/article/1279724089124077568.htm)
 
