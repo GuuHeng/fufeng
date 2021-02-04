@@ -127,12 +127,12 @@
    git config --global http.postBuffer 524288000
 ```
 
-```执行pod命令时，报
+```
+执行pod命令时，报
 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin20/rbconfig.rb:229: warning: Insecure world writable dir /usr/local/opt in PATH, mode 040777
 
 处理：
 sudo chmod go-w /usr/local/opt
 sudo chmod 775 /usr/local
 
-```
 ```
