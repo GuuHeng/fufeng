@@ -147,7 +147,7 @@ urlStr = [urlStr stringByRemovingPercentEncoding];
 completionHandler中要手动GCD回到主线程进行后续操作
 
 
-``
+```
 
 ## 现在存在pod第三方要手动设置team的情况，所以需要设置第三方自动加入team
     post_install do |installer|
