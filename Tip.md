@@ -149,4 +149,14 @@ completionHandler中要手动GCD回到主线程进行后续操作
 
 ``
 
-
+## 现在存在pod第三方要手动设置team的情况，所以需要设置第三方自动加入team
+    post_install do |installer|
+      installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+          config.build_settings['CODE_SIGN_IDENTITY'] = ''
+          config.build_settings['ENABLE_BITCODE'] = 'NO'
+          # 设置最低适配版本11.0
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+          end
+        end
+    end
